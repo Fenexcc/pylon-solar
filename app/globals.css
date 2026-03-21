@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1B2A6B;
+  --teal: #0EA5C8;
+  --gold: #F59E0B;
+  --dark: #0F172A;
+  --light: #F8FAFC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+  background: white;
+}
+
+.btn-primary {
+  background-color: #0EA5C8;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #0284A8;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #1B2A6B;
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #0EA5C8 0%, #1B2A6B 100%);
+}
+
+.section-padding {
+  padding: 80px 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
