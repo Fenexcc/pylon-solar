@@ -20,7 +20,6 @@ export default function HomePage() {
         position: 'relative',
         overflow: 'hidden'
       }}>
-        {/* Residential rooftop solar panels — aerial wide shot */}
         <img
           src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=1800&fit=crop&q=80"
           alt="Residential rooftop solar panels"
@@ -63,28 +62,24 @@ export default function HomePage() {
                 icon: '📈',
                 title: 'Boost Efficiency',
                 desc: 'Clean panels produce up to 50% more energy than dirty ones',
-                // Close-up of solar panel cells — shows the actual product
                 img: 'https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=600&h=300&fit=crop&q=80'
               },
               {
                 icon: '🛡️',
                 title: 'Extend Lifespan',
                 desc: 'Regular cleaning protects your panels and extends their life',
-                // Residential home rooftop with solar panels installed
                 img: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=300&fit=crop&q=80'
               },
               {
                 icon: '💰',
                 title: 'Maximize ROI',
                 desc: 'Get the full return on your solar investment',
-                // Aerial view of residential suburb with solar panels on rooftops
                 img: 'https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=600&h=300&fit=crop&q=80'
               },
               {
                 icon: '💧',
                 title: 'Purified Water',
                 desc: 'De-ionised water leaves no residue or streaks',
-                // Water droplets / pure water close-up
                 img: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?w=600&h=300&fit=crop&q=80'
               },
             ].map((item, i) => (
@@ -101,9 +96,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How It Works — dark overlay on residential solar rooftop */}
+      {/* How It Works */}
       <section style={{ padding: '80px 24px', position: 'relative', overflow: 'hidden' }}>
-        {/* Wide shot of panels on residential roof — relatable to homeowners */}
         <img
           src="https://images.unsplash.com/photo-1595437193398-f24279553f4f?w=1800&fit=crop&q=80"
           alt="Solar panels on residential roof"
@@ -132,6 +126,40 @@ export default function HomePage() {
                 <p style={{ color: 'rgba(255,255,255,0.65)', lineHeight: '1.6' }}>{step.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ⚡ Energy Loss Banner */}
+      <section style={{ background: '#1B2A6B', padding: '64px 24px' }}>
+        <div className="container" style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '32px',
+          flexWrap: 'wrap',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '24px', flex: '1', minWidth: '280px' }}>
+            <div style={{ fontSize: '56px', lineHeight: '1', flexShrink: 0 }}>⚡</div>
+            <div>
+              <h2 style={{ color: 'white', fontSize: 'clamp(20px, 3vw, 28px)', fontWeight: '700', marginBottom: '10px', lineHeight: '1.3' }}>
+                Are your panels silently costing you money?
+              </h2>
+              <p style={{ color: '#94a3b8', fontSize: '16px', lineHeight: '1.6', margin: 0 }}>
+                Dirty solar panels can lose up to{' '}
+                <span style={{ color: '#0EA5C8', fontWeight: '600' }}>30% of their energy output</span>
+                {' '}— that's money straight out of your pocket. Find out exactly what your investment is losing right now.
+              </p>
+            </div>
+          </div>
+          <div style={{ flexShrink: 0 }}>
+            <Link
+              href="/solar-care"
+              className="btn-primary"
+              style={{ fontSize: '17px', padding: '16px 32px', display: 'inline-block' }}
+            >
+              See What You're Losing →
+            </Link>
           </div>
         </div>
       </section>
