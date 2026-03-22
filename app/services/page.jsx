@@ -80,38 +80,42 @@ export default function ServicesPage() {
 
           {[
             {
-              icon: '🏠',
+              thumbnail: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=80&h=80&fit=crop',
+              image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
               title: 'Your Home, Maximized Output',
               desc: "Gold Coast homes face unique challenges — salt spray, dust, and bird activity can cut your energy production by a third. Our residential service restores your panels to peak performance, often within a single visit.",
               features: ['No harsh chemicals — just pure, de-ionised water', 'Ground-based cleaning protects your roof tiles', "We work around your schedule — no disruption to your day"],
               badge: 'Up to 50% efficiency boost'
             },
             {
-              icon: '🏭',
+              thumbnail: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=80&h=80&fit=crop',
+              image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop',
               title: 'Scale Without the Hassle',
               desc: 'Large systems mean larger savings — but also larger losses when panels get dirty. We handle warehouses, retail centres, and office buildings with crews equipped for any system size. Early mornings, weekends, after-hours — we fit your operations.',
               features: ['Dedicated project management for large installs', 'Full compliance with workplace safety standards', 'Detailed reporting for your facilities team'],
               badge: 'Minimal business disruption'
             },
             {
-              icon: '🔑',
+              thumbnail: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=80&h=80&fit=crop',
+              image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop',
               title: 'One Call, All Properties Covered',
               desc: "Managing multiple rentals or Airbnbs? We coordinate with your booking calendars to service panels between guests. Lower power bills mean happier tenants — and fewer questions about energy costs.",
               features: ['Single point of contact for your entire portfolio', 'Automated reminders when cleaning is due', 'Consolidated invoicing for easy accounting'],
               badge: 'Multi-property scheduling'
             },
             {
-              icon: '🔧',
+              thumbnail: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=80&h=80&fit=crop',
+              image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&h=600&fit=crop',
               title: 'Expert Panel Inspection',
               desc: "Our trained eyes spot what others miss — cracked glass, loose wiring, corroded mounts, and hotspots that kill efficiency. Get a detailed report with photos and recommendations before small issues become costly repairs.",
               features: ['12-point visual inspection checklist', 'Photo documentation of any concerns', 'Referrals to trusted electricians if repairs are needed'],
               badge: 'Catch issues early'
             },
           ].map((item, i) => (
-            <div key={i} style={{ display: 'grid', gridTemplateColumns: i % 2 === 0 ? '1fr 1fr' : '1fr 1fr', gap: '60px', alignItems: 'center', marginBottom: '80px', direction: i % 2 === 0 ? 'ltr' : 'rtl' }}>
+            <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center', marginBottom: '80px', direction: i % 2 === 0 ? 'ltr' : 'rtl' }}>
               <div style={{ direction: 'ltr' }}>
-                <div style={{ background: '#0EA5C8', borderRadius: '8px', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', marginBottom: '16px' }}>
-                  {item.icon}
+                <div style={{ borderRadius: '8px', width: '56px', height: '56px', overflow: 'hidden', marginBottom: '16px' }}>
+                  <img src={item.thumbnail} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <h3 style={{ fontWeight: '700', fontSize: '28px', marginBottom: '16px' }}>{item.title}</h3>
                 <p style={{ color: '#64748b', lineHeight: '1.7', marginBottom: '20px' }}>{item.desc}</p>
@@ -123,9 +127,10 @@ export default function ServicesPage() {
                   ))}
                 </ul>
               </div>
-              <div style={{ direction: 'ltr', background: '#e2e8f0', borderRadius: '12px', height: '300px', display: 'flex', alignItems: 'flex-end', padding: '16px', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ fontSize: '80px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -60%)' }}>{item.icon}</div>
-                <span style={{ background: 'rgba(255,255,255,0.9)', padding: '8px 16px', borderRadius: '8px', fontWeight: '600', fontSize: '14px', color: '#1B2A6B' }}>{item.badge}</span>
+              <div style={{ direction: 'ltr', borderRadius: '12px', height: '300px', display: 'flex', alignItems: 'flex-end', padding: '16px', position: 'relative', overflow: 'hidden' }}>
+                <img src={item.image} alt={item.title} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.15)' }} />
+                <span style={{ position: 'relative', zIndex: 1, background: 'rgba(255,255,255,0.9)', padding: '8px 16px', borderRadius: '8px', fontWeight: '600', fontSize: '14px', color: '#1B2A6B' }}>{item.badge}</span>
               </div>
             </div>
           ))}
