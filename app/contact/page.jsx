@@ -112,6 +112,28 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Google Map — Service Area */}
+      <section style={{ background: '#f8fafc', padding: '80px 24px' }}>
+        <div className="container">
+          <h2 style={{ textAlign: 'center', fontSize: '36px', fontWeight: '700', marginBottom: '12px' }}>Our Service Area</h2>
+          <p style={{ textAlign: 'center', color: '#64748b', fontSize: '18px', marginBottom: '40px' }}>
+            Based on the Gold Coast, servicing all of South East Queensland
+          </p>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 30px rgba(0,0,0,0.10)', border: '1px solid #e2e8f0' }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226914.2289978712!2d153.23506!3d-28.0167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b910c3cd5417481%3A0xf1d8b4d78aca6827!2sGold%20Coast%20QLD!5e0!3m2!1sen!2sau!4v1700000000000"
+              width="100%"
+              height="450"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Pylon Solar Services — Gold Coast Service Area"
+            />
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }
