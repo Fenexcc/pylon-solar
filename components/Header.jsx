@@ -33,8 +33,8 @@ export default function Header() {
 
         {/* Right side — phone + CTA */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <a href="tel:0412293143" style={{ color: '#0EA5C8', fontWeight: '600', textDecoration: 'none', fontSize: '15px' }}>
-            📞 0412 293 143
+          <a href="tel:0412293143" style={{ color: '#0EA5C8', fontWeight: '600', textDecoration: 'none', fontSize: '15px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            📞 Call Now
           </a>
           <Link href="/quote" className="btn-primary" style={{ padding: '10px 20px', fontSize: '14px' }}>
             Get a Quote
@@ -61,6 +61,7 @@ export default function Header() {
             <Link href="/about" style={{ color: '#1e293b', textDecoration: 'none', fontWeight: '500' }} onClick={() => setMenuOpen(false)}>About</Link>
             <Link href="/faq" style={{ color: '#1e293b', textDecoration: 'none', fontWeight: '500' }} onClick={() => setMenuOpen(false)}>FAQ</Link>
             <Link href="/contact" style={{ color: '#1e293b', textDecoration: 'none', fontWeight: '500' }} onClick={() => setMenuOpen(false)}>Contact</Link>
+            <a href="tel:0412293143" className="btn-primary" style={{ textAlign: 'center' }} onClick={() => setMenuOpen(false)}>📞 Call Now</a>
             <Link href="/quote" className="btn-primary" style={{ textAlign: 'center' }} onClick={() => setMenuOpen(false)}>Get a Quote</Link>
           </nav>
         </div>
