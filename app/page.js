@@ -11,7 +11,6 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section style={{
-        background: 'linear-gradient(135deg, #0c1445 0%, #1B2A6B 40%, #0EA5C8 100%)',
         minHeight: '85vh',
         display: 'flex',
         alignItems: 'center',
@@ -21,14 +20,37 @@ export default function HomePage() {
         position: 'relative',
         overflow: 'hidden'
       }}>
-        <div style={{ maxWidth: '800px', zIndex: 1 }}>
+        {/* Background Photo */}
+        <img
+          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1800&fit=crop"
+          alt="Solar panels on rooftop"
+          style={{
+            position: 'absolute',
+            top: 0, left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 0
+          }}
+        />
+        {/* Dark overlay to keep text readable */}
+        <div style={{
+          position: 'absolute',
+          top: 0, left: 0,
+          width: '100%',
+          height: '100%',
+          background: 'linear-gradient(135deg, rgba(12,20,69,0.82) 0%, rgba(27,42,107,0.78) 40%, rgba(14,165,200,0.65) 100%)',
+          zIndex: 1
+        }} />
+        {/* Content */}
+        <div style={{ maxWidth: '800px', zIndex: 2, position: 'relative' }}>
           <h1 style={{ color: 'white', fontSize: 'clamp(36px, 6vw, 72px)', fontWeight: '800', lineHeight: '1.1', marginBottom: '24px' }}>
             Maximize Your Solar Efficiency
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '20px', marginBottom: '12px' }}>
             Professional solar panel cleaning using purified de-ionised water.
           </p>
-          <p style={{ color: '#0EA5C8', fontSize: '22px', fontWeight: '600', marginBottom: '40px' }}>
+          <p style={{ color: '#38bdf8', fontSize: '22px', fontWeight: '600', marginBottom: '40px' }}>
             Increase energy output by up to 50% with expert cleaning.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
