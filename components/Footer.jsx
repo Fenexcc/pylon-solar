@@ -5,7 +5,6 @@ export default function Footer() {
     <footer style={{ background: '#0F172A', color: 'white', padding: '60px 24px 24px' }}>
       <div className="container">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', marginBottom: '40px' }}>
-          
           {/* Logo & Description */}
           <div>
             <img src="/logo.png" alt="Pylon Solar Services" style={{ height: '60px', width: 'auto', marginBottom: '16px' }} />
@@ -13,9 +12,9 @@ export default function Footer() {
               Professional solar panel cleaning services for Gold Coast and South East Queensland.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>f</a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>ig</a>
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>tt</a>
+              <a href="https://www.facebook.com/profile.php?id=61587116489711" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>f</a>
+              <a href="https://www.instagram.com/pylonsolarservices/" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>ig</a>
+              <a href="https://www.tiktok.com/@pylonsolarservices" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>tt</a>
             </div>
           </div>
 
@@ -54,7 +53,7 @@ export default function Footer() {
                 ✉️ pylonsolarservices@gmail.com
               </a>
               <p style={{ color: '#94a3b8', fontSize: '14px' }}>📍 Gold Coast & South East Queensland</p>
-<p style={{ color: '#94a3b8', fontSize: '14px' }}>Available 7 Days a Week</p>
+              <p style={{ color: '#94a3b8', fontSize: '14px' }}>Available 7 Days a Week</p>
             </div>
           </div>
         </div>
