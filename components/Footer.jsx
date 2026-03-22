@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -12,9 +13,15 @@ export default function Footer() {
               Professional solar panel cleaning services for Gold Coast and South East Queensland.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
-              <a href="https://www.facebook.com/profile.php?id=61587116489711" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>f</a>
-              <a href="https://www.instagram.com/pylonsolarservices/" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>ig</a>
-              <a href="https://www.tiktok.com/@pylonsolarservices" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '20px' }}>tt</a>
+              <a href="https://www.facebook.com/profile.php?id=61587116489711" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '24px' }}>
+                <FaFacebook />
+              </a>
+              <a href="https://www.instagram.com/pylonsolarservices/" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '24px' }}>
+                <FaInstagram />
+              </a>
+              <a href="https://www.tiktok.com/@pylonsolarservices" target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '24px' }}>
+                <FaTiktok />
+              </a>
             </div>
           </div>
 
