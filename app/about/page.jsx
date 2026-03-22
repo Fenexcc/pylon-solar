@@ -21,15 +21,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission — photo left, text right */}
+      {/* Mission — photo of residential home with solar panels, text right */}
       <section style={{ padding: '80px 24px', background: 'white' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center', marginBottom: '80px' }}>
             <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 30px rgba(0,0,0,0.10)' }}>
+              {/* Residential home with solar panels on roof — directly relevant */}
               <img
-                src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&fit=crop"
-                alt="Solar panels on Gold Coast home"
-                style={{ width: '100%', height: '400px', objectFit: 'cover', display: 'block' }}
+                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&h=500&fit=crop&q=80"
+                alt="Residential home with solar panels"
+                style={{ width: '100%', height: '420px', objectFit: 'cover', display: 'block' }}
               />
             </div>
             <div>
@@ -59,7 +60,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Approach — text left, photo right */}
+      {/* Our Approach — text left, close-up of solar panel surface right */}
       <section style={{ padding: '80px 24px', background: '#f8fafc' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
@@ -73,9 +74,10 @@ export default function AboutPage() {
               </p>
             </div>
             <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 30px rgba(0,0,0,0.10)' }}>
+              {/* Close-up of solar panel surface — shows detail of what's being cleaned */}
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&fit=crop"
-                alt="Professional solar panel cleaning equipment"
+                src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=800&h=520&fit=crop&q=80"
+                alt="Close-up of solar panel surface"
                 style={{ width: '100%', height: '420px', objectFit: 'cover', display: 'block' }}
               />
             </div>
@@ -83,38 +85,43 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Why Choose Us — photo cards, all solar/residential focused */}
       <section style={{ padding: '80px 24px', background: 'white' }}>
         <div className="container">
           <h2 style={{ textAlign: 'center', fontSize: '40px', fontWeight: '700', marginBottom: '60px' }}>Why Choose Pylon Solar Services</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
             {[
               {
-                img: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&fit=crop',
+                // Aerial view of Gold Coast suburb residential rooftops
+                img: 'https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=600&h=240&fit=crop&q=80',
                 icon: '📍',
                 title: 'Local Gold Coast Operator',
                 desc: "We're based right here on the Gold Coast and understand the unique challenges our climate presents — from coastal salt spray to dust storms, we know what impacts your panels."
               },
               {
-                img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&fit=crop',
+                // Close-up of solar panel cells — equipment/technical focus
+                img: 'https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=600&h=240&fit=crop&q=80',
                 icon: '🔧',
                 title: 'Professional Equipment',
                 desc: "We invest in the best water purification systems, water-fed poles, and soft-bristle brushes. This isn't a side hustle — it's what we do, and we do it right."
               },
               {
-                img: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=600&fit=crop',
+                // Residential rooftop solar — relatable home ownership context
+                img: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=240&fit=crop&q=80',
                 icon: '✅',
                 title: 'Care & Consistency',
                 desc: "We treat every property with the same care we'd give our own homes, with photo documentation so you can see the results every time."
               },
               {
-                img: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&fit=crop',
+                // Pure water / droplets — eco and water purity theme
+                img: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?w=600&h=240&fit=crop&q=80',
                 icon: '🌿',
                 title: 'Environmentally Responsible',
                 desc: 'We use purified water systems that minimize water waste and avoid harsh chemicals that could harm your garden or the environment.'
               },
               {
-                img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&fit=crop',
+                // Solar panels on residential roof from ground angle
+                img: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=600&h=240&fit=crop&q=80',
                 icon: '💬',
                 title: 'Transparent Communication',
                 desc: "From your initial quote to job completion, we keep you informed. No surprises, no hidden fees — just honest, professional service."

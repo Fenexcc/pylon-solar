@@ -20,14 +20,15 @@ export default function HomePage() {
         position: 'relative',
         overflow: 'hidden'
       }}>
+        {/* Residential rooftop solar panels — aerial wide shot */}
         <img
-          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1800&fit=crop"
-          alt="Solar panels on rooftop"
+          src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=1800&fit=crop&q=80"
+          alt="Residential rooftop solar panels"
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
         />
         <div style={{
           position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
-          background: 'linear-gradient(135deg, rgba(12,20,69,0.82) 0%, rgba(27,42,107,0.78) 40%, rgba(14,165,200,0.65) 100%)',
+          background: 'linear-gradient(135deg, rgba(12,20,69,0.85) 0%, rgba(27,42,107,0.80) 40%, rgba(14,165,200,0.60) 100%)',
           zIndex: 1
         }} />
         <div style={{ maxWidth: '800px', zIndex: 2, position: 'relative' }}>
@@ -58,10 +59,34 @@ export default function HomePage() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px' }}>
             {[
-              { icon: '📈', title: 'Boost Efficiency', desc: 'Clean panels produce up to 50% more energy than dirty ones', img: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=400&fit=crop' },
-              { icon: '🛡️', title: 'Extend Lifespan', desc: 'Regular cleaning protects your panels and extends their life', img: 'https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=400&fit=crop' },
-              { icon: '💰', title: 'Maximize ROI', desc: 'Get the full return on your solar investment', img: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=400&fit=crop' },
-              { icon: '💧', title: 'Purified Water', desc: 'De-ionised water leaves no residue or streaks', img: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?w=400&fit=crop' },
+              {
+                icon: '📈',
+                title: 'Boost Efficiency',
+                desc: 'Clean panels produce up to 50% more energy than dirty ones',
+                // Close-up of solar panel cells — shows the actual product
+                img: 'https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=600&h=300&fit=crop&q=80'
+              },
+              {
+                icon: '🛡️',
+                title: 'Extend Lifespan',
+                desc: 'Regular cleaning protects your panels and extends their life',
+                // Residential home rooftop with solar panels installed
+                img: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=300&fit=crop&q=80'
+              },
+              {
+                icon: '💰',
+                title: 'Maximize ROI',
+                desc: 'Get the full return on your solar investment',
+                // Aerial view of residential suburb with solar panels on rooftops
+                img: 'https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=600&h=300&fit=crop&q=80'
+              },
+              {
+                icon: '💧',
+                title: 'Purified Water',
+                desc: 'De-ionised water leaves no residue or streaks',
+                // Water droplets / pure water close-up
+                img: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?w=600&h=300&fit=crop&q=80'
+              },
             ].map((item, i) => (
               <div key={i} style={{ background: 'white', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 2px 20px rgba(0,0,0,0.08)', border: '1px solid #e2e8f0' }}>
                 <img src={item.img} alt={item.title} style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }} />
@@ -76,11 +101,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How It Works — with background photo */}
+      {/* How It Works — dark overlay on residential solar rooftop */}
       <section style={{ padding: '80px 24px', position: 'relative', overflow: 'hidden' }}>
+        {/* Wide shot of panels on residential roof — relatable to homeowners */}
         <img
-          src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1800&fit=crop"
-          alt="Solar panel installation"
+          src="https://images.unsplash.com/photo-1595437193398-f24279553f4f?w=1800&fit=crop&q=80"
+          alt="Solar panels on residential roof"
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
         />
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(15,23,42,0.88)', zIndex: 1 }} />
