@@ -147,7 +147,7 @@ export default function HomePage() {
               </h2>
               <p style={{ color: '#94a3b8', fontSize: '16px', lineHeight: '1.6', margin: 0 }}>
                 Dirty solar panels can lose up to{' '}
-                <span style={{ color: '#0EA5C8', fontWeight: '600' }}>30% of their energy output</span>
+                <span style={{ color: '#0EA5C8', fontWeight: '600' }}>50% of their energy output</span>
                 {' '}— that's money straight out of your pocket. Find out exactly what your investment is losing right now.
               </p>
             </div>
